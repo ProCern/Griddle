@@ -1,6 +1,6 @@
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const webpack = require('webpack');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const path = require('path');
 
 module.exports = {
@@ -29,8 +29,8 @@ module.exports = {
   },
   plugins: [
     new LodashModuleReplacementPlugin(),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new UglifyJsPlugin()
+    // new webpack.optimize.OccurrenceOrderPlugin(),
+    // new UglifyJsPlugin()
   ],
   externals: [
     {
